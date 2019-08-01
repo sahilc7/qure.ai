@@ -1,11 +1,11 @@
 # Use an official Python runtime as a parent image
 
+FROM nikolaik/python-nodejs:latest
+
 # Adding backend directory to make absolute filepaths consistent across services
 RUN mkdir /app
 RUN mkdir /app/backend
 RUN mkdir /app/client
-
-FROM nikolaik/python-nodejs:latest
 
 # backend
 WORKDIR /app/backend
