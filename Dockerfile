@@ -1,6 +1,6 @@
 # Use an official Python runtime as a parent image
-FROM python:3.6-slim
-
+# FROM python:3.6-slim
+FROM nikolaik/python-nodejs:latest
 # Adding backend directory to make absolute filepaths consistent across services
 RUN mkdir /app
 RUN mkdir /app/backend
@@ -22,12 +22,11 @@ EXPOSE 8000
 # otherwise the browser won't be able to find it
 CMD python3 manage.py runserver 0.0.0.0:8000
 
-FROM node:8-alpine
 WORKDIR /app/client
 
 # Install JS app dependencies
 COPY client/package.json /app/client
-RUN npm i nyc
+RUN npm install node-zopfli
 RUN npm install
 
 # Add files needed to build the app

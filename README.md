@@ -1,6 +1,6 @@
 ## Client
 ```sh
-$ cd source/client
+$ cd client
 ``` 
 
 ## Install Dependencies
@@ -37,7 +37,7 @@ $ docker stop qureai   # Stop container
 
 ## Server
 ```sh
-$ cd source/backend
+$ cd backend
 ``` 
 
 ## Install Dependencies
