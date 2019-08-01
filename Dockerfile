@@ -22,11 +22,20 @@ EXPOSE 8000
 # otherwise the browser won't be able to find it
 CMD python3 manage.py runserver 0.0.0.0:8000
 
+
+FROM node:9-alpine
 WORKDIR /app/client
 
 # Install JS app dependencies
 COPY client/package.json /app/client
-RUN npm install node-zopfli
+# --no-cache: download package index on-the-fly, no need to cleanup afterwards
+# --virtual: bundle packages, remove whole bundle at once, when done
+RUN apk --no-cache --virtual build-dependencies add \
+    python \
+    make \
+    g++ \
+    && npm install \
+    && apk del build-dependencies
 RUN npm install
 
 # Add files needed to build the app

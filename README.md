@@ -1,3 +1,18 @@
+## Server
+```sh
+$ cd backend
+``` 
+
+## Install Dependencies
+```sh
+$ pip3 install --upgrade -r requirements.txt 
+```
+
+## Run server
+```sh
+$ python3 manage.py runserver 0.0.0.0:8000
+```
+
 ## Client
 ```sh
 $ cd client
@@ -19,10 +34,13 @@ $ npm run build     # builds production assets (transpile, minify, etc)
 $ npm start         # Start express server and serves index.html
 ```
 
-## Docker
+```
+# Visit following link if using local env
+```
+localhost:http://127.0.0.1:4000/
+```
 
-# Run image
-```docker run -it nikolaik/python-nodejs bash
+## Docker
 
 To run a production version in [docker](https://www.docker.com):
 ```sh
@@ -33,27 +51,7 @@ App will be running at <http://localhost:4000>
 
 ```sh
 $ docker stop qureai   # Stop container
-```
 
-## Server
-```sh
-$ cd backend
-``` 
-
-## Install Dependencies
-```sh
-$ pip3 install --upgrade -r requirements.txt 
-```
-
-## Run server
-```sh
-$ python3 manage.py runserver 0.0.0.0:8000
-```
-
-# Visit following link if using local env
-```
-localhost:http://127.0.0.1:3000/
-```
 
 ## Note
 
