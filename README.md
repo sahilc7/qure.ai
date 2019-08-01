@@ -3,6 +3,7 @@
 ```
 - I have pushed the image to docker hub but running two server on the same docker container I was facing a little bit of difficulty.
 - Though you can pull the code from docker hub and client side will be served.
+- And I have created two docker files for each client and server in their individual folder.
 ```
 
 ## Alternative
