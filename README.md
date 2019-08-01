@@ -34,26 +34,26 @@ $ npm run build     # builds production assets (transpile, minify, etc)
 $ npm start         # Start express server and serves index.html
 ```
 
-```
+
 # Visit following link if using local env
 ```
 localhost:http://127.0.0.1:4000/
 ```
 
-## Docker
+# Docker
 
 To run a production version in [docker](https://www.docker.com):
 ```sh
-$ docker build -t qureai .   # Build docker container
-$ docker run -d --name qureai -p 4000:4000 qureai  # Run docker container
+$ docker pull sahilc007/qure.ai  # pull latest docker tag
+$ docker run -d --name qure.ai -p 4000:4000 sahilc007/qure.ai  # Run docker container
 ```
 App will be running at <http://localhost:4000>
 
 ```sh
-$ docker stop qureai   # Stop container
+$ docker stop sahilc007/qure.ai   # Stop container
+```
 
-
-## Note
+## Note:
 
 ```
 - DjangoRestFramework used for serving the apis.
