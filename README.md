@@ -1,3 +1,16 @@
+## I wasn't able to acheive following things.
+
+```
+- I have pushed the image to docker hub but running two server on the same docker container I was facing a little bit of difficulty.
+- Though you can pull the code from docker hub and client side will be served.
+```
+
+## Alternative
+
+```
+- To run the whole app follow the readme step after cloning directory to you local system.
+```
+
 ## Server
 ```sh
 $ cd backend
